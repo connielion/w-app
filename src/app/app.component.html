@@ -6,17 +6,17 @@
 
   <div class="collapse navbar-collapse" id="navbarColor03">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active']"> <!--active link class-->
+        <a class="nav-link" routerLink="/"><i class="fas fa-home"></i><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" routerLink="/current">Current Weather</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" routerLink="/forecast">Forecast</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" routerLink="/about">About</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
