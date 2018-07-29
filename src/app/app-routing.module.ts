@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 // home comp
 import { HomeComponent } from './home/home.component';
+import { CurrentComponent } from './current/current.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // path to home
-  // current next
+  { path: 'current', component: CurrentComponent },
   // forecast
   // about
 ];
