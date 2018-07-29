@@ -4,11 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 // home comp
 import { HomeComponent } from './home/home.component';
 import { CurrentComponent } from './current/current.component';
+import { ForecastComponent } from './forecast/forecast.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // path to home
   { path: 'current', component: CurrentComponent },
-  // forecast
+  { path: 'forecast', component: ForecastComponent},
   // about
 ];
 
